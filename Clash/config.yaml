@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-02 13:59:48
+# 创建时间：2023-04-02 14:16:45
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：11
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,12 +21,13 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"Google-美国-IPv4_1","type":"vmess","server":"Replit-v2ray.Nothingness-Voi.repl.co","port":443,"cipher":"auto","uuid":"7e7e8b3b-aba8-49a0-b3bb-769c88baba22","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"Replit-v2ray.Nothingness-Voi.repl.co","network":"ws","ws-opts":{"path":"/vm","headers":{"host":"Replit-v2ray.Nothingness-Voi.repl.co"}}}
-  - {"name":"Google-美国-IPv4_2","type":"vless","server":"replit-v2ray.nothingness-voi.repl.co","port":443,"uuid":"7e7e8b3b-aba8-49a0-b3bb-769c88baba22","tls":true,"servername":"Replit-v2ray.Nothingness-Voi.repl.co","network":"ws","ws-opts":{"path":"/vl","headers":{"host":"Replit-v2ray.Nothingness-Voi.repl.co"}}}
+  - {"name":"Azure-美国-ipv4[限流80G]]_1","type":"vmess","server":"13.92.188.115","port":33031,"cipher":"auto","uuid":"a04e5e14-7ee1-446e-e73d-567c02f16f4b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"kcp"}
+  - {"name":"Azure-日本-ipv6(cf)","type":"vmess","server":"2606:4700:3026:2d:d991:725a:869a:8fe6","port":2096,"cipher":"auto","uuid":"b4fa8ba6-75ed-4eae-c108-292c4490f56c","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/ws/","headers":{"host":"jp.nothingnessvoid.tech"}}}
+  - {"name":"Google-美国-IPv4","type":"vmess","server":"Replit-v2ray.Nothingness-Voi.repl.co","port":443,"cipher":"auto","uuid":"7e7e8b3b-aba8-49a0-b3bb-769c88baba22","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"Replit-v2ray.Nothingness-Voi.repl.co","network":"ws","ws-opts":{"path":"/vm","headers":{"host":"Replit-v2ray.Nothingness-Voi.repl.co"}}}
   - {"name":"Azure-荷兰-ipv4[限流80G]","type":"vmess","server":"13.80.11.142","port":53097,"cipher":"auto","uuid":"6996b018-c35d-461a-f852-20886ffe71fc","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"kcp"}
   - {"name":"Azure-荷兰-ipv6(cf)[限流80G]","type":"vmess","server":"2606:4700:3026:2d:d991:725a:869a:8fe6","port":2096,"cipher":"auto","uuid":"20e03e7c-dde6-412b-d5dc-aa6474fe77bc","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/ws/","headers":{"host":"nl.nothingnessvoid.tech"}}}
   - {"name":"Azure-美国-ipv6(cf)[限流80G]","type":"vmess","server":"2606:4700:3026:2d:d991:725a:869a:8fe6","port":2096,"cipher":"auto","uuid":"994eaf7d-9c1c-49cc-f204-6e4b7ede6108","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"us.nothingnessvoid.tech"}}}
-  - {"name":"Azure-美国-ipv4[限流80G]]","type":"vmess","server":"13.92.188.115","port":33031,"cipher":"auto","uuid":"a04e5e14-7ee1-446e-e73d-567c02f16f4b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"kcp"}
+  - {"name":"Azure-美国-ipv4[限流80G]]_2","type":"vmess","server":"13.92.188.115","port":33031,"cipher":"auto","uuid":"a04e5e14-7ee1-446e-e73d-567c02f16f4b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"kcp"}
   - {"name":"DO-新加坡-ipv6免流2","type":"vmess","server":"6.sgp.nothingnessvoid.tech","port":22577,"cipher":"auto","uuid":"0d187028-8790-4080-d569-fb9ec35466c4","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"kcp"}
   - {"name":"DO-新加坡-ipv6（cf）","type":"vmess","server":"2606:4700:3026:2d:d991:725a:869a:8fe6","port":2096,"cipher":"auto","uuid":"84cb6b8a-20a2-4c81-8bf6-be0400f4e120","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/ws/","headers":{"host":"sgp.nothingnessvoid.tech"}}}
   - {"name":"DO-新加坡-ipv4","type":"vmess","server":"159.65.133.66","port":43455,"cipher":"auto","uuid":"6f668a82-b136-4814-fa47-2149f0eed80f","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"kcp"}
@@ -37,12 +38,13 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - Google-美国-IPv4_1
-      - Google-美国-IPv4_2
+      - Azure-美国-ipv4[限流80G]]_1
+      - Azure-日本-ipv6(cf)
+      - Google-美国-IPv4
       - Azure-荷兰-ipv4[限流80G]
       - Azure-荷兰-ipv6(cf)[限流80G]
       - Azure-美国-ipv6(cf)[限流80G]
-      - Azure-美国-ipv4[限流80G]]
+      - Azure-美国-ipv4[限流80G]]_2
       - DO-新加坡-ipv6免流2
       - DO-新加坡-ipv6（cf）
       - DO-新加坡-ipv4
@@ -53,12 +55,13 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - Google-美国-IPv4_1
-      - Google-美国-IPv4_2
+      - Azure-美国-ipv4[限流80G]]_1
+      - Azure-日本-ipv6(cf)
+      - Google-美国-IPv4
       - Azure-荷兰-ipv4[限流80G]
       - Azure-荷兰-ipv6(cf)[限流80G]
       - Azure-美国-ipv6(cf)[限流80G]
-      - Azure-美国-ipv4[限流80G]]
+      - Azure-美国-ipv4[限流80G]]_2
       - DO-新加坡-ipv6免流2
       - DO-新加坡-ipv6（cf）
       - DO-新加坡-ipv4
@@ -69,12 +72,13 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Google-美国-IPv4_1
-      - Google-美国-IPv4_2
+      - Azure-美国-ipv4[限流80G]]_1
+      - Azure-日本-ipv6(cf)
+      - Google-美国-IPv4
       - Azure-荷兰-ipv4[限流80G]
       - Azure-荷兰-ipv6(cf)[限流80G]
       - Azure-美国-ipv6(cf)[限流80G]
-      - Azure-美国-ipv4[限流80G]]
+      - Azure-美国-ipv4[限流80G]]_2
       - DO-新加坡-ipv6免流2
       - DO-新加坡-ipv6（cf）
       - DO-新加坡-ipv4
@@ -84,12 +88,13 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Google-美国-IPv4_1
-      - Google-美国-IPv4_2
+      - Azure-美国-ipv4[限流80G]]_1
+      - Azure-日本-ipv6(cf)
+      - Google-美国-IPv4
       - Azure-荷兰-ipv4[限流80G]
       - Azure-荷兰-ipv6(cf)[限流80G]
       - Azure-美国-ipv6(cf)[限流80G]
-      - Azure-美国-ipv4[限流80G]]
+      - Azure-美国-ipv4[限流80G]]_2
       - DO-新加坡-ipv6免流2
       - DO-新加坡-ipv6（cf）
       - DO-新加坡-ipv4
@@ -99,12 +104,13 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - Google-美国-IPv4_1
-      - Google-美国-IPv4_2
+      - Azure-美国-ipv4[限流80G]]_1
+      - Azure-日本-ipv6(cf)
+      - Google-美国-IPv4
       - Azure-荷兰-ipv4[限流80G]
       - Azure-荷兰-ipv6(cf)[限流80G]
       - Azure-美国-ipv6(cf)[限流80G]
-      - Azure-美国-ipv4[限流80G]]
+      - Azure-美国-ipv4[限流80G]]_2
       - DO-新加坡-ipv6免流2
       - DO-新加坡-ipv6（cf）
       - DO-新加坡-ipv4
@@ -114,12 +120,13 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Google-美国-IPv4_1
-      - Google-美国-IPv4_2
+      - Azure-美国-ipv4[限流80G]]_1
+      - Azure-日本-ipv6(cf)
+      - Google-美国-IPv4
       - Azure-荷兰-ipv4[限流80G]
       - Azure-荷兰-ipv6(cf)[限流80G]
       - Azure-美国-ipv6(cf)[限流80G]
-      - Azure-美国-ipv4[限流80G]]
+      - Azure-美国-ipv4[限流80G]]_2
       - DO-新加坡-ipv6免流2
       - DO-新加坡-ipv6（cf）
       - DO-新加坡-ipv4
@@ -146,12 +153,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Google-美国-IPv4_1
-      - Google-美国-IPv4_2
+      - Azure-美国-ipv4[限流80G]]_1
+      - Azure-日本-ipv6(cf)
+      - Google-美国-IPv4
       - Azure-荷兰-ipv4[限流80G]
       - Azure-荷兰-ipv6(cf)[限流80G]
       - Azure-美国-ipv6(cf)[限流80G]
-      - Azure-美国-ipv4[限流80G]]
+      - Azure-美国-ipv4[限流80G]]_2
       - DO-新加坡-ipv6免流2
       - DO-新加坡-ipv6（cf）
       - DO-新加坡-ipv4
